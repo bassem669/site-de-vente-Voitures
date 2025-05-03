@@ -1,0 +1,74 @@
+<nav *ngIf="!login" class="navbar navbar-expand-lg navbar-light bg-color">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="">
+        <img src="../../../assets/logo.png" alt="BassemStore Logo" width="40" height="40" class="d-inline-block align-text-top rounded">
+        <span class="ms-2">BassemStore</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cars">Produits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/panier"><i class="fas fa-cart-shopping"></i></a>
+          </li>
+        </ul>
+        <form class="d-flex ms-3">
+          <a href="login" class="btn btn-outline-primary">Login</a>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+  <nav *ngIf="login" class="navbar navbar-expand-lg navbar-light bg-color">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="">
+        <img src="../../../assets/logo.png" alt="BassemStore Logo" width="40" height="40" class="d-inline-block align-text-top rounded">
+        <span class="ms-2">BassemStore</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cars">Produits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a *ngIf="type" class="nav-link" href="/Dashbord">Dashbord</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/panier"><i class="fas fa-cart-shopping"></i></a>
+          </li>
+          
+        </ul>
+        <div class="ms-3">
+          <a href="profil" class="text-decoration-none">
+            <i class="fas fa-user-circle fs-3 text-primary"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  

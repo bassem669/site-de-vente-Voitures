@@ -1,0 +1,8 @@
+.cardcss{
+    width: 350px;
+    height: 420px;
+    padding: 0px 50px 50px 50px;
+}
+.bg-color{
+    background-color: rgb(255, 250, 243);
+}

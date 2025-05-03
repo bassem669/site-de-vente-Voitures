@@ -1,0 +1,65 @@
+<div class="container mt-4">
+  <div *ngIf="car" class="card mb-4">
+    <img [src]="car.url_image" [alt]="car.model" class="card-img-top img-fluid" />
+    <div class="card-body">
+      <h2 class="card-title">{{ car.marque }} {{ car.model }}</h2>
+      <p class="card-text container">{{ car.description }}</p>
+      <p><strong>Référence :</strong> {{ car.ref }}</p>
+      <p><strong>Année :</strong> {{ car.annee }}</p>
+    </div>
+  </div>
+  
+  <div class="d-flex justify-content-around mb-4">
+    <button type="button" class="btn btn-primary" (click)="ajouterAuPanier()">Ajouter au panier</button>
+    <button class="btn btn-danger" *ngIf="type" data-bs-toggle="modal" data-bs-target="#updateCarModal">Mettre à jour voiture</button>
+    <a routerLink="/cars" class="btn btn-secondary">Retour à la liste</a>
+    
+  </div>
+</div>
+
+<div class="modal fade" id="updateCarModal" tabindex="-1" aria-labelledby="updateCarModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h3 class="modal-title" id="updateCarModalLabel">Mettre à jour voiture</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form (ngSubmit)="mettreAJourVoiture()">
+          <div class="mb-3">
+            <label for="marque" class="form-label">Marque</label>
+            <input type="text" id="marque" [(ngModel)]="car.marque" name="marque" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="model" class="form-label">Modèle</label>
+            <input type="text" id="model" [(ngModel)]="car.model" name="model" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="annee" class="form-label">Année</label>
+            <input type="number" id="annee" [(ngModel)]="car.annee" name="annee" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="prix" class="form-label">Prix</label>
+            <input type="number" id="prix" [(ngModel)]="car.prix" name="prix" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea id="description" [(ngModel)]="car.description" name="description" class="form-control" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="quantite" class="form-label">Quantité</label>
+            <input type="number" id="quantite" [(ngModel)]="car.quantite" name="quantite" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="url_image" class="form-label">URL de l'image</label>
+            <input type="text" id="url_image" [(ngModel)]="car.url_image" name="url_image" class="form-control" />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        <button type="submit" class="btn btn-primary" (click)="mettreAJourVoiture()">Enregistrer</button>
+      </div>
+    </div>
+  </div>
+</div>

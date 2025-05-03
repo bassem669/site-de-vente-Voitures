@@ -1,0 +1,54 @@
+{
+  "CAR": [
+    {
+      "ref": "C001",
+      "marque": "Toyota",
+      "model": "Corolla",
+      "description": "Une berline compacte, économique et fiable.",
+      "annee": 2022,
+      "url_image": "https://tse2.mm.bing.net/th?id=OIP.bJyCnrewRCO7hpQwP2aFXgHaE6&pid=Api&P=0&h=180",
+      "prix": "20000",
+      "quantite": "2"
+    },
+    {
+      "ref": "C002",
+      "marque": "Tesla",
+      "model": "Model S",
+      "description": "Une voiture électrique de luxe avec une autonomie exceptionnelle.",
+      "annee": 2023,
+      "url_image": "https://crdms.images.consumerreports.org/c_lfill,w_720,q_auto,f_auto/prod/cars/chrome/white/2023TSC030001_1280_01",
+      "prix": "70000",
+      "quantite": "4"
+    },
+    {
+      "ref": "C003",
+      "marque": "Ford",
+      "model": "Mustang",
+      "description": "Une icône américaine offrant puissance et style.",
+      "annee": 2021,
+      "url_image": "https://inv.assets.sincrod.com/ChromeColorMatch/us/TRANSPARENT_cc_2021FOC210141_01_1280_PQ.png",
+      "prix": "50000",
+      "quantite": "3"
+    },
+    {
+      "ref": "C004",
+      "marque": "BMW",
+      "model": "X5",
+      "description": "Un SUV de luxe combinant confort et performance.",
+      "annee": 2023,
+      "url_image": "https://media.ed.edmunds-media.com/bmw/x5/2021/oem/2021_bmw_x5_4dr-suv_m50i_fq_oem_1_600.jpg",
+      "prix": "60000",
+      "quantite": "1"
+    },
+    {
+      "ref": "C005",
+      "marque": "Honda",
+      "model": "Civic",
+      "description": "Une compacte populaire avec une excellente consommation d'essence.",
+      "annee": 2022,
+      "url_image": "https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2022/Civic%20Sedan/AW/Carshot/carshot_CivicSedan_front_CIVIC20L4DSPORT_2022_PlatinumWhitePearl_FE2F5NEW_NH-883P.png",
+      "prix": "25000",
+      "quantite": "5"
+    }
+  ]
+}

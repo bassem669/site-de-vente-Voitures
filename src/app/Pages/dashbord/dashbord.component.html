@@ -1,0 +1,54 @@
+<div class="container mt-4">
+    <h2 class="mb-4 text-center">Liste des Commandes</h2>
+    
+    <div *ngIf="commandes.length === 0" class="alert alert-info text-center">
+      <strong>Aucune commande disponible pour le moment.</strong>
+    </div>
+    
+    <div *ngFor="let commande of commandes" class="card mb-4 shadow-sm">
+      <div class="card-header bg-primary text-white">
+        <h4 class="mb-0">Commande #{{ commande.id }} - {{ commande.dateCommande | date:'medium' }}</h4>
+      </div>
+      
+      <div class="card-body">
+        <h3 class="mb-3">Utilisateur :</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <p><strong>Nom :</strong> {{ commande.utilisateur.nom }}</p>
+          </div>
+          <div class="col-md-6">
+            <p><strong>Email :</strong> {{ commande.utilisateur.email }}</p>
+          </div>
+        </div>
+        
+        <h3 class="mt-4">Produits :</h3>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped text-center">
+            <thead class="bg-light">
+              <tr>
+                <th>Marque</th>
+                <th>Modèle</th>
+                <th>Prix (€)</th>
+                <th>Quantité</th>
+                <th>Total (€)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let produit of commande.produits">
+                <td>{{ produit.marque }}</td>
+                <td>{{ produit.model }}</td>
+                <td>{{ produit.prix }}</td>
+                <td>{{ produit.quantite }}</td>
+                <td>{{ produit.prix * produit.quantite }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  
+        <div class="text-end mt-3">
+          <h5><strong>Total Commande : </strong>{{ commande.total }} €</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  

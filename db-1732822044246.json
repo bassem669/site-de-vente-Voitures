@@ -1,0 +1,124 @@
+{
+  "CAR": [
+    {
+      "ref": "C001",
+      "marque": "Toyota",
+      "model": "Corolla",
+      "description": "La Toyota Corolla 2022 est une berline compacte qui continue d’incarner la fiabilité, l'efficacité énergétique et la technologie avancée. Avec un design moderne et un intérieur raffiné, elle reste un choix populaire pour ceux qui recherchent une voiture pratique, confortable et économique.",
+      "annee": 2022,
+      "url_image": "https://tse2.mm.bing.net/th?id=OIP.bJyCnrewRCO7hpQwP2aFXgHaE6&pid=Api&P=0&h=180",
+      "prix": 20000,
+      "quantite": "2"
+    },
+    {
+      "ref": "C002",
+      "marque": "Tesla",
+      "model": "Model S",
+      "description": "La Tesla Model S 2023 est une berline électrique haut de gamme qui repousse les limites de la technologie automobile avec ses performances exceptionnelles, son autonomie impressionnante, et ses caractéristiques innovantes. Ce modèle phare de Tesla continue de redéfinir la conduite électrique en alliant luxe, technologie, et puissance.",
+      "annee": 2023,
+      "url_image": "https://crdms.images.consumerreports.org/c_lfill,w_720,q_auto,f_auto/prod/cars/chrome/white/2023TSC030001_1280_01",
+      "prix": 70000,
+      "quantite": "4"
+    },
+    {
+      "ref": "C003",
+      "marque": "Ford",
+      "model": "Mustang",
+      "description": "La Ford Mustang 2021 est une version emblématique de l'un des muscle cars les plus célèbres et les plus appréciés au monde. Connue pour son design audacieux, ses performances impressionnantes et son histoire légendaire, la Mustang 2021 continue d'incarner l'esprit de la performance américaine avec une touche moderne.",
+      "annee": 2021,
+      "url_image": "https://inv.assets.sincrod.com/ChromeColorMatch/us/TRANSPARENT_cc_2021FOC210141_01_1280_PQ.png",
+      "prix": 50000,
+      "quantite": "3"
+    },
+    {
+      "id": 4,
+      "ref": "C004",
+      "marque": "BMW",
+      "model": "X5",
+      "description": "Le BMW X5 2023 est un SUV de luxe qui combine performance, confort, technologie avancée et design élégant. Ce modèle incarne la quintessence de la marque allemande BMW, offrant une expérience de conduite exceptionnelle, un intérieur raffiné, et une gamme de technologies innovantes.",
+      "annee": 2023,
+      "url_image": "https://media.ed.edmunds-media.com/bmw/x5/2021/oem/2021_bmw_x5_4dr-suv_m50i_fq_oem_1_600.jpg",
+      "prix": 60000,
+      "quantite": "1"
+    },
+    {
+      "id": 5,
+      "ref": "C005",
+      "marque": "Honda",
+      "model": "Civic",
+      "description": "La Honda Civic 2022 est une berline compacte qui combine une conduite dynamique, un design moderne et une excellente fiabilité, fidèle à l’héritage de la Civic, l'un des modèles les plus populaires de la marque japonaise. Avec cette nouvelle version, Honda a redoublé d’efforts pour améliorer l’esthétique, les performances et les technologies tout en conservant les caractéristiques qui ont fait de la Civic un choix privilégié pour de nombreux conducteurs.",
+      "annee": 2022,
+      "url_image": "https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2022/Civic%20Sedan/AW/Carshot/carshot_CivicSedan_front_CIVIC20L4DSPORT_2022_PlatinumWhitePearl_FE2F5NEW_NH-883P.png",
+      "prix": 25000,
+      "quantite": "5"
+    },
+    {
+      "marque": "toyota",
+      "model": "supra",
+      "prix": 90000,
+      "annee": 2020,
+      "url_image": "https://tse3.mm.bing.net/th?id=OIP.Ywqk-RIpMrUXP_uJVLFQNAHaE4&pid=Api&P=0&h=180",
+      "ref": "C006",
+      "description": "La Toyota Supra est bien plus qu'une simple voiture de sport ; c'est une légende qui combine des décennies d'héritage avec des technologies modernes pour offrir une expérience de conduite inégalée. Avec son design audacieux, ses performances explosives et son agilité exceptionnelle, la Supra est un symbole de passion pour les amateurs de vitesse et d'élégance.",
+      "quantite": 5,
+      "id": 6
+    },
+    {
+      "marque": "fiat",
+      "model": "croma",
+      "prix": 20000,
+      "annee": 2020,
+      "url_image": "https://tse1.mm.bing.net/th?id=OIP.et_WVuFdw2v6x_rnqK-_FwHaFj&pid=Api&P=0&h=180",
+      "ref": "C007",
+      "description": "La Fiat Croma 2020 est une berline familiale élégante et spacieuse, idéale pour répondre aux besoins des familles modernes. Avec son design extérieur sobre et raffiné, elle combine style et praticité, notamment grâce à son hayon large qui facilite l'accès au coffre. L'intérieur offre un espace généreux, des sièges confortables et des équipements modernes, comme un système d'infodivertissement et une connectivité avancée. Sous le capot, la Fiat Croma propose des motorisations diesel et essence performantes, offrant un bon équilibre entre puissance et économie de carburant. Elle se distingue également par ses équipements de sécurité, incluant l'ABS, l'ESP et des airbags multiples, garantissant une conduite sereine. Pratique, fiable et confortable, la Fiat Croma 2020 reste une voiture polyvalente adaptée aux trajets quotidiens comme aux longues escapades.",
+      "quantite": 3,
+      "id": 7
+    }
+  ],
+  "panier": [],
+  "Commande": [
+    {
+      "utilisateur": {
+        "nom": "bassem",
+        "email": "bassemmathlouthi05@gmail.com"
+      },
+      "dateCommande": "2024-11-28T18:56:51.104Z",
+      "produits": [
+        {
+          "id": 1,
+          "marque": "Toyota",
+          "model": "Corolla",
+          "prix": 20000,
+          "quantite": "2"
+        }
+      ],
+      "total": 40000,
+      "id": 1
+    },
+    {
+      "utilisateur": {
+        "nom": "bassem",
+        "email": "bassemmathlouthi05@gmail.com"
+      },
+      "dateCommande": "2024-11-28T19:13:58.422Z",
+      "produits": [
+        {
+          "id": 7,
+          "marque": "fiat",
+          "model": "croma",
+          "prix": 20000,
+          "quantite": 3
+        },
+        {
+          "id": 8,
+          "marque": "Tesla",
+          "model": "Model S",
+          "prix": 70000,
+          "quantite": "4"
+        }
+      ],
+      "total": 340000,
+      "id": 2
+    }
+  ]
+}

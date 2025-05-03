@@ -1,0 +1,25 @@
+<div class="d-flex align-items-center justify-content-center vh-100 bg-light">
+    <div class="card p-3 cardcss bg-color"><br>
+        <h2 class="text-center mb-4">Connexion</h2>
+        <form [formGroup]="loginform" (ngSubmit)="Onsubmit()" action="" method="POST">
+            <div class="form-group mb-2">
+                <label for="email">Email : </label>
+                <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Entrez votre Email" required formControlName="email">
+            </div>
+            <div class="form-group mb-2 position-relative">
+                <label for="password">Mot de passe : </label>
+                <div class="input-group">
+                    <input [type]="showPassword ? 'text' : 'password'" class="form-control mt-1" id="password" name="password" placeholder="Entrez votre mot de passe" required formControlName="password"/>
+                    <button type="button" class="btn btn-outline-secondary mt-1" (click)="togglePasswordVisibility()">{{ showPassword ? 'Masquer' : 'Afficher' }}</button>
+                </div>
+            </div>
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-success mt-2">Se connecter</button>
+            </div>
+        </form>
+
+        <div class="mt-3 text-center">
+            <a href="register">Créer un compte</a>
+        </div><br>
+    </div>
+</div>

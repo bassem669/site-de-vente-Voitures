@@ -1,0 +1,206 @@
+{
+  "CAR": [
+    {
+      "id": 1,
+      "ref": "C001",
+      "marque": "Toyota",
+      "model": "Corolla",
+      "description": "La Toyota Corolla 2022 est une berline compacte qui continue d’incarner la fiabilité, l'efficacité énergétique et la technologie avancée. Avec un design moderne et un intérieur raffiné, elle reste un choix populaire pour ceux qui recherchent une voiture pratique, confortable et économique.",
+      "annee": 2022,
+      "url_image": "https://tse2.mm.bing.net/th?id=OIP.bJyCnrewRCO7hpQwP2aFXgHaE6&pid=Api&P=0&h=180",
+      "prix": 20000,
+      "quantite": 0
+    },
+    {
+      "id": 2,
+      "ref": "C002",
+      "marque": "Tesla",
+      "model": "Model S",
+      "description": "La Tesla Model S 2023 est une berline électrique haut de gamme qui repousse les limites de la technologie automobile avec ses performances exceptionnelles, son autonomie impressionnante, et ses caractéristiques innovantes. Ce modèle phare de Tesla continue de redéfinir la conduite électrique en alliant luxe, technologie, et puissance.",
+      "annee": 2023,
+      "url_image": "https://crdms.images.consumerreports.org/c_lfill,w_720,q_auto,f_auto/prod/cars/chrome/white/2023TSC030001_1280_01",
+      "prix": 70000,
+      "quantite": 5
+    },
+    {
+      "id": 3,
+      "ref": "C003",
+      "marque": "Ford",
+      "model": "Mustang",
+      "description": "La Ford Mustang 2021 est une version emblématique de l'un des muscle cars les plus célèbres et les plus appréciés au monde. Connue pour son design audacieux, ses performances impressionnantes et son histoire légendaire, la Mustang 2021 continue d'incarner l'esprit de la performance américaine avec une touche moderne.",
+      "annee": 2021,
+      "url_image": "https://inv.assets.sincrod.com/ChromeColorMatch/us/TRANSPARENT_cc_2021FOC210141_01_1280_PQ.png",
+      "prix": 50000,
+      "quantite": 0
+    },
+    {
+      "id": 4,
+      "ref": "C004",
+      "marque": "BMW",
+      "model": "X5",
+      "description": "Le BMW X5 2023 est un SUV de luxe qui combine performance, confort, technologie avancée et design élégant. Ce modèle incarne la quintessence de la marque allemande BMW, offrant une expérience de conduite exceptionnelle, un intérieur raffiné, et une gamme de technologies innovantes.",
+      "annee": 2023,
+      "url_image": "https://media.ed.edmunds-media.com/bmw/x5/2021/oem/2021_bmw_x5_4dr-suv_m50i_fq_oem_1_600.jpg",
+      "prix": 60000,
+      "quantite": 1
+    },
+    {
+      "id": 5,
+      "ref": "C005",
+      "marque": "Honda",
+      "model": "Civic",
+      "description": "La Honda Civic 2022 est une berline compacte qui combine une conduite dynamique, un design moderne et une excellente fiabilité, fidèle à l’héritage de la Civic, l'un des modèles les plus populaires de la marque japonaise. Avec cette nouvelle version, Honda a redoublé d’efforts pour améliorer l’esthétique, les performances et les technologies tout en conservant les caractéristiques qui ont fait de la Civic un choix privilégié pour de nombreux conducteurs.",
+      "annee": 2022,
+      "url_image": "https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2022/Civic%20Sedan/AW/Carshot/carshot_CivicSedan_front_CIVIC20L4DSPORT_2022_PlatinumWhitePearl_FE2F5NEW_NH-883P.png",
+      "prix": 25000,
+      "quantite": 5
+    },
+    {
+      "marque": "toyota",
+      "model": "supra",
+      "prix": 90000,
+      "annee": 2020,
+      "url_image": "https://tse3.mm.bing.net/th?id=OIP.Ywqk-RIpMrUXP_uJVLFQNAHaE4&pid=Api&P=0&h=180",
+      "ref": "C006",
+      "description": "La Toyota Supra est bien plus qu'une simple voiture de sport ; c'est une légende qui combine des décennies d'héritage avec des technologies modernes pour offrir une expérience de conduite inégalée. Avec son design audacieux, ses performances explosives et son agilité exceptionnelle, la Supra est un symbole de passion pour les amateurs de vitesse et d'élégance.",
+      "quantite": 5,
+      "id": 6
+    },
+    {
+      "marque": "Ford",
+      "model": "Raptor",
+      "prix": 35000,
+      "annee": 2024,
+      "url_image": "https://carsfrenzy.net/wp-content/uploads/2023/02/2024-Ford-Raptor-Changes-1.jpg",
+      "ref": "C008",
+      "description": "La Ford Raptor est un pick-up emblématique conçu pour affronter les terrains les plus exigeants tout en offrant une expérience de conduite exaltante. Dotée d'un moteur puissant, souvent un V6 biturbo EcoBoost, ou dans certaines versions, un V8 robuste, elle combine performance et robustesse. Avec sa suspension spécialement calibrée pour le hors-piste, ses amortisseurs Fox Racing et son design imposant, la Raptor est aussi élégante qu'efficace. À l'intérieur, elle offre un confort moderne avec des technologies de pointe, telles qu'un système d'infodivertissement avancé et des aides à la conduite. C'est le véhicule idéal pour les amateurs d'aventure et de sensations fortes.",
+      "quantite": 5,
+      "id": 8
+    },
+    {
+      "marque": "fiat",
+      "model": "croma",
+      "prix": 20000,
+      "annee": 2024,
+      "url_image": "https://tse1.mm.bing.net/th?id=OIP.et_WVuFdw2v6x_rnqK-_FwHaFj&pid=Api&P=0&h=180",
+      "ref": "C009",
+      "description": "hbhkgvh",
+      "quantite": 1,
+      "id": 9
+    }
+  ],
+  "panier": [],
+  "Commande": [
+    {
+      "utilisateur": {
+        "nom": "bassem",
+        "email": "bassemmathlouthi05@gmail.com"
+      },
+      "dateCommande": "2024-11-28T18:56:51.104Z",
+      "produits": [
+        {
+          "id": 1,
+          "marque": "Toyota",
+          "model": "Corolla",
+          "prix": 20000,
+          "quantite": 2
+        }
+      ],
+      "total": 40000,
+      "id": 1
+    },
+    {
+      "utilisateur": {
+        "nom": "laribi",
+        "email": "laribi@gmail.com"
+      },
+      "dateCommande": "2024-11-28T19:13:58.422Z",
+      "produits": [
+        {
+          "id": 7,
+          "marque": "fiat",
+          "model": "croma",
+          "prix": 20000,
+          "quantite": 3
+        },
+        {
+          "id": 8,
+          "marque": "Tesla",
+          "model": "Model S",
+          "prix": 70000,
+          "quantite": 4
+        }
+      ],
+      "total": 340000,
+      "id": 2
+    },
+    {
+      "utilisateur": {
+        "nom": "khald",
+        "email": "khaled@gmail.com"
+      },
+      "dateCommande": "2024-11-29T21:08:43.490Z",
+      "produits": [
+        {
+          "id": 1,
+          "marque": "Toyota",
+          "model": "Corolla",
+          "prix": 20000,
+          "quantite": 1
+        },
+        {
+          "id": 3,
+          "marque": "Ford",
+          "model": "Mustang",
+          "prix": 50000,
+          "quantite": 1
+        }
+      ],
+      "total": 70000,
+      "id": 3
+    },
+    {
+      "utilisateur": {
+        "nom": "asma ",
+        "email": "asma@gmail.com"
+      },
+      "dateCommande": "2024-11-29T21:50:56.319Z",
+      "produits": [
+        {
+          "id": 1,
+          "marque": "Toyota",
+          "model": "Corolla",
+          "prix": 20000,
+          "quantite": 1
+        },
+        {
+          "id": 4,
+          "marque": "BMW",
+          "model": "X5",
+          "prix": 60000,
+          "quantite": 1
+        }
+      ],
+      "total": 80000,
+      "id": 4
+    },
+    {
+      "utilisateur": {
+        "nom": "ousama",
+        "email": "oussama@gamil.com"
+      },
+      "dateCommande": "2024-12-02T09:31:52.466Z",
+      "produits": [
+        {
+          "id": 3,
+          "marque": "Ford",
+          "model": "Mustang",
+          "prix": 50000,
+          "quantite": 3
+        }
+      ],
+      "total": 150000,
+      "id": 5
+    }
+  ]
+}

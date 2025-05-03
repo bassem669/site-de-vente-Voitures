@@ -1,0 +1,68 @@
+{
+  "user": [
+    {
+      "firstName": "bassem",
+      "lastName": "mathlouthi",
+      "email": "bassemmathlouthi05@gmail.com",
+      "password": "Bb123456789",
+      "confirmPassword": "Bb123456789",
+      "id": 1,
+      "type": "admin"
+    },
+    {
+      "firstName": "bilel",
+      "lastName": "mathlouthi",
+      "email": "bilel@gmail.com",
+      "password": "Bb123456789",
+      "confirmPassword": "Bb123456789",
+      "id": 2,
+      "type": "user"
+    },
+    {
+      "firstName": "asma ",
+      "lastName": "gharbi",
+      "email": "asma@gmail.com",
+      "password": "Aa123456789",
+      "confirmPassword": "Aa123456789",
+      "id": 3,
+      "type": "user"
+    },
+    {
+      "firstName": "mohamed ali",
+      "lastName": "laribi",
+      "email": "laribi@gmail.com",
+      "password": "Ll123456789",
+      "confirmPassword": "Ll123456789",
+      "id": 4,
+      "type": "user"
+    },
+    {
+      "firstName": "emna",
+      "lastName": "zaidoun",
+      "email": "emnammm@gmail.com",
+      "password": "Ee123456789",
+      "confirmPassword": "Ee123456789",
+      "id": 5,
+      "type": "user"
+    },
+    {
+      "firstName": "khald",
+      "lastName": "rouai",
+      "email": "khaled@gmail.com",
+      "password": "kK123456789",
+      "confirmPassword": "kK123456789",
+      "type": "user",
+      "id": 6
+    },
+    {
+      "firstName": "ousama",
+      "lastName": "ousamkzoc",
+      "email": "oussama@gamil.com",
+      "password": "Oo123456789",
+      "confirmPassword": "Oo123456789",
+      "type": "user",
+      "id": 7
+    }
+  ],
+  "login": []
+}

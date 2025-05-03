@@ -1,0 +1,76 @@
+<div class="container mt-4">
+  <button class="btn btn-success mb-4" *ngIf="type" data-bs-toggle="modal" data-bs-target="#addCarModal">Ajouter voiture</button>
+  
+  <div class="row">
+    <ng-container *ngFor="let car of cars">
+      <div *ngIf="car.quantite != 0 || type" class="col-md-4 mb-4">
+        
+        <div class="card h-100 shadow-sm">
+          <img [src]="car.url_image" [alt]="car.model" class="card-img-top img-fluid" />
+          <div class="card-body">
+            <h4 class="card-title">{{ car.marque }}</h4>
+            <h4 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ car.model }}</h4>
+            <p class="text-muted">Année : {{ car.annee }}</p>
+            <p class="fw-bold">Prix : ${{ car.prix }}</p>
+            <p *ngIf="car.quantite == 0 && type" class="text-danger">Le quantite egale 0!! Mettre a jour</p>
+            <div class="d-flex justify-content-between">
+              <button class="btn btn-danger" *ngIf="type" (click)="supprimerVoiture(car)">Supprimer voiture</button>
+            </div>
+            
+            <a [routerLink]="['/cars', car.ref]" class="btn btn-primary mt-2">Afficher plus de détails</a>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+
+
+  <div class="modal fade" id="addCarModal" tabindex="-1" aria-labelledby="addCarModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addCarModalLabel">Ajouter une nouvelle voiture</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form #addCarForm="ngForm" (ngSubmit)="onSubmit(addCarForm)">
+            <div class="mb-3">
+              <label for="marque" class="form-label">Marque</label>
+              <input type="text" id="marque" class="form-control" [(ngModel)]="newCar.marque" name="marque" required />
+            </div>
+            <div class="mb-3">
+              <label for="model" class="form-label">Modèle</label>
+              <input type="text" id="model" class="form-control" [(ngModel)]="newCar.model" name="model" required />
+            </div>
+            <div class="mb-3">
+              <label for="prix" class="form-label">Prix</label>
+              <input type="number" id="prix" class="form-control" [(ngModel)]="newCar.prix" name="prix" required />
+            </div>
+            <div class="mb-3">
+              <label for="annee" class="form-label">Année</label>
+              <input type="number" id="annee" class="form-control" [(ngModel)]="newCar.annee" name="annee" required />
+            </div>
+            <div class="mb-3">
+              <label for="url_image" class="form-label">Image URL</label>
+              <input type="text" id="url_image" class="form-control" [(ngModel)]="newCar.url_image" name="url_image" required />
+            </div>
+            <div class="mb-3">
+              <label for="ref" class="form-label">Référence</label>
+              <input type="text" id="ref" class="form-control" [(ngModel)]="newCar.ref" name="ref" required />
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Description</label>
+              <textarea id="description" class="form-control" [(ngModel)]="newCar.description" name="description" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="quantite" class="form-label">Quantité</label>
+              <input type="number" id="quantite" class="form-control" [(ngModel)]="newCar.quantite" name="quantite" min="1" required/>
+            </div>
+            <button type="submit" class="btn btn-primary">Ajouter</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

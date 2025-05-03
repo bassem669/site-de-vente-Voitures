@@ -1,0 +1,48 @@
+<div class="container mt-4 mb-3">
+  <h2>Mon Panier</h2>
+  <div *ngIf="cars.length == 0" class="alert alert-info">Votre panier est vide.</div>
+  <div *ngFor="let car of cars; let i = index" class="card mb-3">
+    <div class="card-body">
+      <h3 class="card-title">{{ car.marque }} {{ car.model }}</h3>
+      <p class="card-text">Prix : ${{ car.prix }} &nbsp;&nbsp;&nbsp;
+      <span class="card-text">Quantité : <input type="number" [(ngModel)]="car.quantite" [min]="1" [max]="car.quantite" class="form-control w-auto d-inline"/></span></p>
+      <button class="btn btn-danger" (click)="supprimerItem(i)">Supprimer</button>
+    </div>
+  </div>
+  <div *ngIf="cars.length > 0" class="mt-4">
+    <p><strong>Total :</strong> {{ calculerTotal() }} €</p>
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#paymentModal">Passer la commande</button>
+  </div>
+</div>
+
+<div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="paymentModalLabel">Informations de paiement</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form #paymentForm="ngForm" (ngSubmit)="passerCommande(paymentForm)">
+          <div class="mb-3">
+            <label for="cardNumber" class="form-label">Numéro de carte</label>
+            <input type="text" id="cardNumber" class="form-control" [(ngModel)]="paymentInfo.cardNumber" name="cardNumber" required placeholder="1234 5678 9101 1121" />
+          </div>
+          <div class="mb-3">
+            <label for="expiryDate" class="form-label">Date d'expiration</label>
+            <input type="month" id="expiryDate" class="form-control" [(ngModel)]="paymentInfo.expiryDate" name="expiryDate" required />
+          </div>
+          <div class="mb-3">
+            <label for="cvv" class="form-label">CVV</label>
+            <input type="text" id="cvv" class="form-control" [(ngModel)]="paymentInfo.cvv" name="cvv" required placeholder="123" />
+          </div>
+          <div class="mb-3">
+            <label for="cardHolder" class="form-label">Nom du titulaire</label>
+            <input type="text" id="cardHolder" class="form-control" [(ngModel)]="paymentInfo.cardHolder" name="cardHolder" required placeholder="John Doe" />
+          </div>
+          <button type="submit" class="btn btn-primary">Confirmer le paiement</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

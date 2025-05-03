@@ -1,0 +1,15 @@
+#main {
+    background: linear-gradient(180deg, #fffaf3, #d4c3ac);
+    height: 300px;
+  }
+  .valeur{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .valeur:hover{
+    transform: scale(1.05); /* Légère augmentation de la taille de la carte */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  .custom-img {
+    width: auto;  /* Limite la largeur à 80% du conteneur parent */
+    max-height: 70%;    /* Maintient les proportions de l'image */
+}
