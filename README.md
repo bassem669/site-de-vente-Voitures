@@ -1,3 +1,9 @@
+json-server --watch src/app/Pages/boutique/car.json --port 3000
+json-server --watch src/app/login_regester/user.json --port 5000
+ng serve 
+Exécuter chaque commande dans un terminal indépendant
+
+
 # Projet
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
